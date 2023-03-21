@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Celsius to Fahrenheit</title>
+    <link href="/static/stylesheet.css" rel="stylesheet">
+</head>
+<body>
+<h1>Temperature Converter</h1>
+<div class="wrapper">
+
+    <div id="right">
+        <label for="temp">Enter temperature: </label>
+        <input type="text" id="temp" name="Temperature" placeholder="Enter temperature here...">
+        <p>Converted to: <span th:message="@{converter.getConvertedNumber}"></span></p>
+
+        <form action="#" th:action="@{/converter}" method="post">
+            <button type="button" id="c2f" name="celsiusToFahrenheit">C2F</button>
+            <button type="button" id="f2c" name="fahrenheitToCelsius">F2C</button>
+        </form>
+
+
+    </div>
+</div>
+</body>
+</html>

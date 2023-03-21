@@ -1,0 +1,21 @@
+.wrapper {
+    height: 200px;
+    width: 400px;
+    border: 1px solid black;
+    margin: auto;
+    padding: 4px;
+    background-color: paleturquoise;
+    display: flex;
+    flex-direction: row;
+}
+
+#c2f{
+    border-radius: 10px;
+    background-color: greenyellow;
+}
+
+#f2c{
+    border-radius: 10px;
+    background-color: turquoise;
+    margin: 20px;
+}

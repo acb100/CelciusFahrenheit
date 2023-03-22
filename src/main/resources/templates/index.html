@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Celsius to Fahrenheit</title>
-    <link th:href="@{/static/stylesheet.css}" rel="stylesheet">
+    <link th:href="@{/styles/style.css}" rel="stylesheet">
 </head>
 <body>
 <h1>Temperature Converter</h1>
 <div class="wrapper">
 
     <div id="right">
+
         <label for="temp">Enter temperature: </label>
-        <input type="text" id="temp" name="Temperature" placeholder="Enter temperature here...">
-        <p>Converted to: <span th:message="@{converter.getConvertedNumber}"></span></p>
-
-        <form action="#" th:action="@{/converter}" method="post">
-            <button type="button" id="c2f" name="celsiusToFahrenheit">C2F</button>
-            <button type="button" id="f2c" name="fahrenheitToCelsius">F2C</button>
+        <input type="text" id="temp" name="input" placeholder="Enter temperature here...">
+        <p>Converted to: <span th:message="@{converter.getConvertedNumber}" name="convertedNumber"></span></p>
+        <form action="#" name="c2f" method="post">
+            <button type="button" id="c2f" name="c2f">C2F</button>
         </form>
-
-
+        <form action="#" name="f2c" method="post">
+            <button type="button" id="f2c" name="f2c">F2C</button>
+        </form>
     </div>
 </div>
 </body>
